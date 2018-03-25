@@ -6,8 +6,7 @@
     "scripts": {
         "start": "./node_modules/.bin/electron ."
     },
-    "author": "",
-    "license": "ISC",
+    "author": "zentby",
     "devDependencies": {
         "electron": "^1.8.4"
     }
