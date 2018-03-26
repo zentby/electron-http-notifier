@@ -1,11 +1,11 @@
 # TODO
 
-- [ ] Support left/right click
-- [ ] Change icon
-- [ ] Stay in system notifications
+- [x] Support left/right click
+- [x] Change icon
+- [x] Stay in system notifications
 - [ ] *Message History
-- [ ] Environment variable for configs
-- [ ] Hide from taskbar
+- [x] Environment variable for configs
+- [x] Hide from taskbar
 - [ ] Config file
     - [ ] URL
     - [ ] History Limit
