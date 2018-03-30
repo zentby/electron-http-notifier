@@ -1,13 +1,34 @@
+# Electron Http Notifier
+
+Cross platform and light-weight tray application. It allows you to show native desktop notification by http request.
+
+## Install
+
+```bash
+npm install
+npm start
+```
+
+## Usage
+
+```bash
+curl -X POST \
+  http://127.0.0.1:8008 \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "title":"hello",
+	"body": "world"}'
+```
+
 # TODO
 
 - [x] Support left/right click
 - [x] Change icon
 - [x] Stay in system notifications
-- [ ] *Message History
 - [x] Environment variable for configs
 - [x] Hide from taskbar
+- [x] Publish repository
 - [ ] Config file
-    - [ ] URL
-    - [ ] History Limit
+- [ ] Title/Body Format
+- [ ] *Message History
 - [ ] *Config UI
-- [ ] Publish repository
