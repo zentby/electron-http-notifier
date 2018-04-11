@@ -1,4 +1,5 @@
 # Electron Http Notifier
+[![Build Status](https://travis-ci.org/zentby/electron-http-notifier.svg?branch=master)](https://travis-ci.org/zentby/electron-http-notifier)
 
 Cross platform and light-weight tray application. It allows you to show native desktop notification by http request.
 

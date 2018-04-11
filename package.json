@@ -4,11 +4,20 @@
     "description": "Light-weight tray application that allows you to show native desktop notification by http request.",
     "main": "main.js",
     "scripts": {
-        "start": "PORT=8008 HOST=127.0.0.1 ./node_modules/.bin/electron ."
+        "start": "PORT=8008 HOST=127.0.0.1 ./node_modules/.bin/electron .",
+	"pack": "electron-builder --dir",
+	"dist": "electron-builder",
+	"postinstall": "electron-builder install-app-deps"
     },
     "author": "zentby",
+    "build":{
+    	"appId": "io.github.zentby",
+	"productName": "Http Notifier"
+    },
     "devDependencies": {
         "electron": "^1.8.4"
     },
-    "dependencies": {}
+    "dependencies": {
+        "electron-builder": "^20.8.1"
+    }
 }
