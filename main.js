@@ -7,8 +7,8 @@ const isWindows = process.platform === 'win32';
 
 let msg = null
 let tray = null
-let icon = './icon/icon.png'
-let image = './icon/icon-512.png'
+let icon = 'icon.png'
+let image = 'icon-512.png'
 
 function showMsg(title, body) {
     if (title || body) {
