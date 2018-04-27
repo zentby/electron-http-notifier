@@ -35,5 +35,6 @@ module.exports = {
         let port = process.env.PORT || 8080
         let host = process.env.HOST || 'localhost'
         server.listen(port, host)
+        return host + ":" + port
     }
 }

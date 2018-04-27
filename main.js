@@ -7,8 +7,8 @@ const isWindows = process.platform === 'win32';
 
 let msg = null
 let tray = null
-let icon = 'icon.png'
-let image = 'icon-512.png'
+let icon = image = 'icon.png'
+//let image = 'icon-512.png'
 
 function showMsg(title, body) {
     if (title || body) {
@@ -19,6 +19,7 @@ function showMsg(title, body) {
         })
     }
     if (msg != null) {
+        console.info("Message: " + msg.body)
         msg.show()
     }
 }
@@ -47,5 +48,6 @@ app.on('ready', () => {
     tray.setContextMenu(contextMenu)
     tray.on('right-click', tray.popUpContextMenu)
 
-    server.createServer('/', showMsg)
+    let url = server.createServer('/', showMsg)
+    showMsg("Http Notifier", "Started to listening " + url)
 })

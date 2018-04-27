@@ -4,25 +4,33 @@
     "description": "Light-weight tray application that allows you to show native desktop notification by http request.",
     "main": "main.js",
     "license": "MIT",
-    "icon": "Icon.png",
+    "icon": "icon.png",
     "scripts": {
-        "start": "PORT=8008 HOST=127.0.0.1 ./node_modules/.bin/electron .",
+        "start": "PORT=8008 HOST=127.0.0.1 electron .",
         "pack": "electron-builder --dir",
         "dist": "electron-builder",
         "postinstall": "electron-builder install-app-deps",
-        "test": "./node_modules/.bin/electron-mocha"
+        "test": "electron-mocha",
+        "win-dev": "set PORT=8008 && electron ."
     },
-    "author": "zentby",
+    "author": "zentby <zentby@gmail.com> (https://zentby.github.io/)",
     "build": {
         "appId": "io.github.zentby",
-        "productName": "Http Notifier"
+        "mac": {
+            "category": "productivity"
+        },
+        "productName": "Http Notifier",
+        "directories": {
+            "output": "dist"
+        },
+        "extraFiles": [
+            "icon.png"
+        ]
     },
     "devDependencies": {
         "electron": "^1.8.4",
-        "electron-mocha": "^6.0.1",
         "electron-builder": "^20.8.1",
-        "spectron": "^3.8.0"
+        "electron-mocha": "^6.0.1"
     },
-    "dependencies": {
-    }
+    "dependencies": {}
 }
