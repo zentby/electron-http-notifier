@@ -17,18 +17,19 @@
     "build": {
         "appId": "io.github.zentby",
         "mac": {
-            "category": "productivity"
+            "type": "development"
         },
         "productName": "Http Notifier",
         "directories": {
             "output": "dist"
         },
-        "extraFiles": [
+        "files": [
+            "**/*",
             "icon.png"
         ]
     },
     "devDependencies": {
-        "electron": "^1.8.4",
+        "electron": "^2.0.0",
         "electron-builder": "^20.8.1",
         "electron-mocha": "^6.0.1"
     },
