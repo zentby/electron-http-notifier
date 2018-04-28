@@ -11,7 +11,8 @@
         "dist": "electron-builder",
         "postinstall": "electron-builder install-app-deps",
         "test": "electron-mocha",
-        "win-dev": "set PORT=8008 && electron ."
+        "win-dev": "set PORT=8008 && electron .",
+        "release": "build"
     },
     "author": "zentby <zentby@gmail.com> (https://zentby.github.io/)",
     "build": {
@@ -29,9 +30,10 @@
         ]
     },
     "devDependencies": {
-        "electron": "^2.0.0",
+        "electron": "^1.8.6",
         "electron-builder": "^20.8.1",
         "electron-mocha": "^6.0.1"
     },
-    "dependencies": {}
+    "dependencies": {
+    }
 }
