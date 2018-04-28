@@ -17,6 +17,7 @@
     "author": "zentby <zentby@gmail.com> (https://zentby.github.io/)",
     "build": {
         "appId": "io.github.zentby",
+        "publish": ["github"],
         "mac": {
             "type": "development"
         },
@@ -28,6 +29,7 @@
             "**/*",
             "icon.png"
         ]
+        
     },
     "devDependencies": {
         "electron": "^1.8.6",
