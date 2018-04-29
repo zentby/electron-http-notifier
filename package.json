@@ -6,12 +6,11 @@
     "license": "MIT",
     "icon": "icon.png",
     "scripts": {
-        "start": "PORT=8008 HOST=127.0.0.1 electron .",
+        "start": "electron .",
         "pack": "electron-builder --dir",
         "dist": "electron-builder",
         "postinstall": "electron-builder install-app-deps",
         "test": "electron-mocha",
-        "win-dev": "set PORT=8008 && electron .",
         "release": "build"
     },
     "author": "zentby <zentby@gmail.com> (https://zentby.github.io/)",
